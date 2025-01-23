@@ -1,0 +1,19 @@
+# Node.js dependencies
+Backend/node_modules/
+front/node_modules/
+
+# Environment variables
+Backend/.env
+front/.env
+
+# Logs
+Backend/npm-debug.log*
+frontend/npm-debug.log*
+
+# Build output
+Backend/dist/
+front/build/
+
+# IDE-specific files
+.idea/
+.vscode/
