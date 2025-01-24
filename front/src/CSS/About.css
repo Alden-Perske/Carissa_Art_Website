@@ -1,0 +1,66 @@
+div#about{
+    display: grid;
+    grid-template-areas: 
+    "education tech"
+    "education skill";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+    
+}
+
+div#about h2{
+    color: #0f1020;
+}
+div#about_teks{
+    grid-area: education;
+}
+
+div#tech{
+    grid-area: tech;
+ 
+}
+
+div#techInner{
+    grid-area: tech;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    
+}
+
+div#techInner div{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+div#tech hr{
+    grid-area: tech;
+    display: flex;
+    
+}
+
+div#skill{
+    grid-area: skill;
+}
+
+div#skillsteks p{
+    display: inline-block;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    border: 2px solid white;
+    color: #0f1020;
+}
+.icon{
+    width: 3rem;
+}
+
+
+
+.gray{
+    background-color: #d9d9d950;
+    margin: 1rem 2.5rem;
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    color: white;
+}

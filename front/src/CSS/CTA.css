@@ -1,0 +1,114 @@
+
+div.CTA {
+    display: grid;
+    grid-template-rows: 
+    1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "leftbox rightbox";
+    margin: 1rem auto;
+    border-radius: 25px;
+    width: 90vw;
+    
+}
+div.CTA div.leftbox{
+    grid-area: leftbox;
+    margin: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.CTA div.rightbox{
+    grid-area: rightbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+div.Textcolour{
+    display: inline;
+    color: #0f1020;
+}
+div.CTA div.rightbox img{
+  width: 300px;
+  
+}
+
+
+div.CTA div.leftbox button:hover{
+    transition: all 0.1s ease-in;
+    background-color: #4169e1;
+    color: white;
+}
+
+div.CTA div.leftbox h1 ,div.CTA div.leftbox h4,div.CTA div.leftbox button{
+    margin: 0rem;
+    font-family: sans-serif;
+    color: white;
+}
+div.CTA div.leftbox button{
+    background-color: #FF13F0;
+    font-weight: bold;
+    border: 2px solid #0f1020;
+    color: #0f1020;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+}
+
+
+
+
+/* lg */
+@media (max-width: 1024px) {
+    div.CTA {
+        display: grid;
+        grid-template-rows: 
+        1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "leftbox "
+        'rightbox';
+        margin: 2rem;
+        
+        
+    }
+    div.CTA div.rightbox img{
+        height: 25rem;
+    }
+}
+
+/* md */
+@media only screen and (max-width: 768px) {
+    div.CTA {
+        box-shadow: none;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    div.CTA div.rightbox img{
+        height: 22rem;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    div.CTA div.rightbox img{
+        height: 20rem;
+        
+    }
+
+  
+    div.CTA div.leftbox{
+        margin: 0.5rem;    
+    }
+}
+  
+    
+
+
+
+

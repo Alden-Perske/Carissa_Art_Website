@@ -1,8 +1,18 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
+import '../CSS/Background.css'
+import Me from '../Components/Me'
+import About from '../Components/About'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <>
+        <Navbar/>
+        <Me/>
+        <About/>
+    
+    </>
+
   )
 }
 
