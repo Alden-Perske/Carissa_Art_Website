@@ -1,7 +1,29 @@
-div#about{
-    background-color: #d9d9d950;
-    margin: 0.7rem;
-    padding: 0.5rem;
-    border-radius: 2rem;
-    min-height: 50vh;
+#scrollwidget{
+    display: grid;
+    grid-template-areas: 
+    "c1 c2 c3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 1rem;
+    overflow-y: scroll;
+
+}
+
+div#c1,div#c2,div#c3{
+    text-align: center;
+    border: 2px solid red;
+    margin: 0.5rem;
+}
+div#c1{
+    grid-area: c1;
+    
+}
+
+div#c2{
+    grid-area: c2;
+    margin-top: 5rem;
+}
+
+div#c3{
+    grid-area: c3;
 }

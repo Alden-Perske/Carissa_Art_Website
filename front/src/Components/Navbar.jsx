@@ -7,7 +7,7 @@ function Navbar() {
   return (
         <div id='Navbar'>
             <ul>
-                <Link to='/ArtPiece/1'><li>Art</li></Link>
+                <Link to='/'><li>Art</li></Link>
                 <Link to='/Home'><li>About Me</li></Link>
                 <Link to='/ArtPiece/1'><li>CV</li></Link>
                 
