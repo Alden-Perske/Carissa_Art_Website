@@ -5,25 +5,59 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 1rem;
-    overflow-y: scroll;
 
+}
+
+div#popup{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: gray;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#popup img{
+    max-height: 90vh;
+
+}
+
+div#popup svg{
+    
+    padding: 0.3rem;
+
+}
+
+img.prent{
+    max-height: 15rem;
+    padding: 0.5rem;
+}
+
+img.prent:hover{
+    transition: all 0.2s ease-in;    
+    filter:opacity(0.5);
 }
 
 div#c1,div#c2,div#c3{
     text-align: center;
-    border: 2px solid red;
-    margin: 0.5rem;
+    margin: 0.2rem;
+    
 }
 div#c1{
     grid-area: c1;
+    margin-top: 5rem;
     
 }
 
 div#c2{
     grid-area: c2;
-    margin-top: 5rem;
+    
 }
 
 div#c3{
     grid-area: c3;
+    margin-top: 5rem;
 }
